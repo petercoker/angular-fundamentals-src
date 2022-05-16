@@ -3,15 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   styleUrls: ['app.component.scss'],
-  template: `
-    <div class="app">
-      {{ title }}
-    </div>
-  `
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  title: string;
+  firstName: string;
+  lastName: string;
+  fullName: string = 'Peter Coker';
+  age: number = 28;
+  legalAge: number = 18;
+  isLegalOld: boolean = true;
+  logo: string = 'img/logo.png';
+ 
   constructor() {
-    this.title = 'Ultimate Angular';
+    this.firstName = 'Peter';
+    this.lastName = 'Coker';
   }
 }
